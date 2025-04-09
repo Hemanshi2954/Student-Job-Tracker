@@ -1,0 +1,275 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
+
+.job-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem 1.5rem;
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: scale(1.01);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.status-badge.applied {
+  background: #17a2b8;
+}
+
+.status-badge.interview {
+  background: #ffc107;
+  color: #333;
+}
+
+.status-badge.offer {
+  background: #28a745;
+}
+
+.status-badge.rejected {
+  background: #dc3545;
+}
+
+.job-card p {
+  margin: 0.4rem 0;
+  color: #555;
+}
+
+.job-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.job-card a:hover {
+  text-decoration: underline;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-actions select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.card-actions button {
+  padding: 6px 12px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.card-actions button:hover {
+  background: #d9363e;
+}
+
+.no-jobs {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+.App {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bg-overlay {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.88);
+  min-height: 100vh;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.form-grid button {
+  grid-column: span 2;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.date-label {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  font-size: 14px;
+}
+
+.date-label input {
+  margin-top: 5px;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.status-badge.applied { background: #007bff; }
+.status-badge.interview { background: #ffc107; }
+.status-badge.offer { background: #28a745; }
+.status-badge.rejected { background: #dc3545; }
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-actions select {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.card-actions button {
+  background: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.status-summary {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.status-summary h2 {
+  margin-top: 0;
+}
+
+.status-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.status-summary li {
+  margin: 4px 0;
+  font-size: 16px;
+}
