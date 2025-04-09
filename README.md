@@ -2,7 +2,7 @@
 
 > Track all your job applications in one place — stay organized, stay ahead!
 
-![Job Tracker Banner](https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1350&q=80)
+![Job Tracker Banner](./client/public/bgpic.png)
 
 ---
 
