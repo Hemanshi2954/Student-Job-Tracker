@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:5000/jobs";
+const API = "https://student-job-tracker-backend-qo0n.onrender.com";
 
 function App() {
   const [jobs, setJobs] = useState([]);
